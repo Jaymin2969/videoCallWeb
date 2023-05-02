@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+    <script src='https://8x8.vc/vpaas-magic-cookie-7601bcb3c50a4e3ca710aab8d51d66c2/external_api.js' async></script>
+        <style>html, body, #jaas-container { height: 100%; }</style>
+        <script type="text/javascript">
+          window.onload = () => {
+            const api = new JitsiMeetExternalAPI("8x8.vc", {
+              roomName: "vpaas-magic-cookie-7601bcb3c50a4e3ca710aab8d51d66c2/SampleAppLoudOptionsBindSufficiently",
+              parentNode: document.querySelector('#jaas-container'),
+							// Make sure to include a JWT if you intend to record,
+							// make outbound calls or use any other premium features!
+							// jwt: "eyJraWQiOiJ2cGFhcy1tYWdpYy1jb29raWUtNzYwMWJjYjNjNTBhNGUzY2E3MTBhYWI4ZDUxZDY2YzIvMmJmN2VjLVNBTVBMRV9BUFAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJqaXRzaSIsImlzcyI6ImNoYXQiLCJpYXQiOjE2ODMwMTQzMDIsImV4cCI6MTY4MzAyMTUwMiwibmJmIjoxNjgzMDE0Mjk3LCJzdWIiOiJ2cGFhcy1tYWdpYy1jb29raWUtNzYwMWJjYjNjNTBhNGUzY2E3MTBhYWI4ZDUxZDY2YzIiLCJjb250ZXh0Ijp7ImZlYXR1cmVzIjp7ImxpdmVzdHJlYW1pbmciOmZhbHNlLCJvdXRib3VuZC1jYWxsIjpmYWxzZSwic2lwLW91dGJvdW5kLWNhbGwiOmZhbHNlLCJ0cmFuc2NyaXB0aW9uIjpmYWxzZSwicmVjb3JkaW5nIjpmYWxzZX0sInVzZXIiOnsiaGlkZGVuLWZyb20tcmVjb3JkZXIiOmZhbHNlLCJtb2RlcmF0b3IiOnRydWUsIm5hbWUiOiJUZXN0IFVzZXIiLCJpZCI6ImF1dGgwfDY0NGZkNzZkYTdlNWMwYzczYmNmMjVmYyIsImF2YXRhciI6IiIsImVtYWlsIjoidGVzdC51c2VyQGNvbXBhbnkuY29tIn19LCJyb29tIjoiKiJ9.a_5BOj7LOl8IekFM3wDHwxaCrJxP9N6QW9vz-dvuOo0NSQ6_8goF3L4mWi0USsjQ0tEwzMwueVGyejBU1c4gwAoxq0nufob7zkdGvYWcVpBTWb_-hJACkyZIB0FT6kwEon51NAm4MyC_7tqt13X77qKNCG0LL2-aiOUaOB176xdgNVw83XQSxbXr3wLX5efGQ83JaMuNxw3KRjolv9x0JJdNmq20AVO4ZOWguL5IvqYim4ogw1VzMGIneFYYOtSzLixBVnf2rm4dezYX4cMOk6VC-LbpXVQYcGezHSlTGWAb_9Hh9fVrQWvmYfM10sURhRp5al4Dy-HQqR2X8WbA4w"
+            });
+          }
+        </script>
+        
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
